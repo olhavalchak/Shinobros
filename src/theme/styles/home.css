@@ -1,0 +1,105 @@
+.home-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.neon {
+  background: url('../assets/neon-city.jpg') no-repeat center center / cover; 
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.navbar-menu {
+  display: flex;
+}
+.navbar-title {
+  background-color: white;
+  color: #090D26;
+  padding: 3px;
+  font-weight: bold;
+}
+.menu {
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 3px;
+  color: #BEC0CD;
+  background-color: #2B2F45;
+}
+.menu:hover {
+  cursor: pointer;
+  background-color: #3D4362;
+}
+.title-container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  font-size: 2em;
+  text-align: center;
+}
+.link-to-story {
+  color: #2B2F45;
+  background-color:  white;
+  padding: 3px;
+  font-weight: bold;
+}
+.link-to-story:hover {
+  background-color: #BEC0CD;
+  cursor: pointer;
+}
+.blur {
+  width: 100%;
+  height: 100%;
+  background: url('../assets/neon-city-blurred.jpg') no-repeat center center / cover; 
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0;
+  }
+  .menu {
+    font-size: small;
+    margin: 10px;
+    text-decoration: none;
+  }
+  .title-container {
+    font-size: 1.5rem;
+  }
+  .link-to-story {
+    font-size: 2rem;
+  }
+}
+.gradient {
+  width: 100%;
+  height: 100%;
+  background: rgb(7,11,41);
+background: linear-gradient(180deg, rgba(7,11,41,1) 0%, rgba(255,255,255,0.011642156862745057) 67%);
+}
+@media only screen and (max-width: 414px) {
+  .title-container {
+    width: 100vw;
+    /* height: 100vh; */
+  }
+  .text {
+    font-size: 3rem;
+  }
+  .navbar-menu {
+    flex-flow: wrap;
+    justify-content: center;
+  }
+}

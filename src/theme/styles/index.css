@@ -1,0 +1,10 @@
+@import './home.css';
+@import './story.css';
+* {
+  margin: 0;
+  color: white;
+}
+body {
+  margin: 0;
+  font-family: 'Audiowide', cursive;
+}

@@ -1,0 +1,34 @@
+.story-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60%;
+  margin-left: 10%;
+}
+.story-text {
+  margin-top: 7%;
+  padding-left: 20%;
+  font-size: small;
+}
+.story-link {
+  margin-right: 20%;
+  margin-top: 10%;
+  align-self: stretch;
+  text-align: end;
+}
+.link {
+  text-decoration: none;
+}
+.flex-text {
+  padding-top: 10px;
+}
+.flex-link {
+  display: flex;
+  justify-content: space-between;
+  margin: 10%;
+}
+@media only screen and (max-width: 768px) {
+  .story-text {
+    margin-top: 0;
+  }
+}
